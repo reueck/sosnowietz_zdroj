@@ -1,6 +1,12 @@
+// alpha version of pallette from hero img made with adobe color wheel
 $dark: #3E5954;
 $darker: #1E261C;
 $light: #f1f2c4;
 $lighter: #F2F0C9;
-$cta: f2e291;
+$cta: #f2e291;
 
+
+// gradients borrowed from cssgradient.io 
+$over-sun-gradient:linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+
+$old-hat-gradient:linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
