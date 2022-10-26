@@ -1,0 +1,31 @@
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.white-block{
+    position: absolute;
+    height: 40px;
+    width: 60%;
+    background-color: $lighter;
+
+    &-right{
+        bottom: 0;
+        right: -50px;
+        transform: skew(45deg);
+    }
+
+    &-left{
+        top: 0;
+        left: -50px;
+        transform: skew(45deg);
+    }
+}
+
+.btn-special-animation{
+    position: relative;
+    transition: background-color: .3s;
+    overflow: hidden;
+    z-index: -1;
+}
