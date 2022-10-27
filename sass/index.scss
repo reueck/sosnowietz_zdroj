@@ -11,6 +11,7 @@ html {
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.8rem;
+	background-color: $lighter;
 }
 
 // nav
@@ -26,7 +27,7 @@ body {
 
 	&:focus {
 		outline: none;
-		border: 1px solid rgba(255, 255, 255, 0.5);
+		border: 1px solid $dark;
 		border-radius: 8px;
 	}
 

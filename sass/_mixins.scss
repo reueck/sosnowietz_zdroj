@@ -3,6 +3,13 @@
 	right: 0;
 	height: 3px;
 	content: '';
-	background-color: $lighter;
+	background-color: $dark;
 	transition: width 0.3s;
+}
+
+@mixin heroImages($bgImg) {
+    background-image: $over-sun-gradient, url($bgImg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }

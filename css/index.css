@@ -21,7 +21,7 @@
 .white-block-right {
   bottom: 0;
   right: -50px;
-  transform: skew(45deg);
+  transform: skew(135deg);
 }
 .white-block-left {
   top: 0;
@@ -31,7 +31,64 @@
 
 .btn-special-animation {
   position: relative;
-  transition: background-color;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  z-index: -1;
+}
+.btn-special-animation::before {
+  display: block;
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  z-index: -1;
+}
+.btn-special-animationhover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  height: 75vh;
+  text-align: center;
+  color: #3E5954;
+  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.924) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-attachment: scroll;
+}
+.header__title {
+  font-family: Fruktur;
+  font-size: 6rem;
+  font-weight: 300;
+}
+.header__text {
+  font-size: 1.8rem;
+}
+.header__btn {
+  margin-top: 2em;
+  padding: 0.8em 1.6em;
+  border: none;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #3E5954;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header__btn__before {
+  background-color: #3E5954;
 }
 
 html {
@@ -42,6 +99,7 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
+  background-color: #F2F0C9;
 }
 
 .burger-btn {
@@ -56,7 +114,7 @@ body {
 }
 .burger-btn:focus {
   outline: none;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #3E5954;
   border-radius: 8px;
 }
 .burger-btn:hover .burger-btn__bars::after, .burger-btn:hover .burger-btn__bars::before {
@@ -72,7 +130,7 @@ body {
   right: 0;
   height: 3px;
   content: "";
-  background-color: #F2F0C9;
+  background-color: #3E5954;
   transition: width 0.3s;
 }
 .burger-btn__bars {
