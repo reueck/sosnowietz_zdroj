@@ -27,12 +27,12 @@
 	position: relative;
 	transition: background-color 0.3s;
 	overflow: hidden;
-	z-index: -1;
+	z-index: 0;
 
 	&::before {
 		display: block;
 		content: '';
-		position: relative;
+		position: absolute;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -44,7 +44,7 @@
 
 	&hover::before {
 		transform: scaleX(1);
-		transform-origin: left;
+		transform-origin: right;
 	}
 }
 
@@ -75,15 +75,17 @@
 	&__btn {
 		margin-top: 2em;
 		padding: 0.8em 1.6em;
+        font-size: 1.4rem;
+        background-color: $light;
 		border: none;
-        background-color: #fff;
 		border-radius: 8px;
 		color: $dark;
 		text-decoration: none;
 		text-transform: uppercase;
 		cursor: pointer;
-		&__before {
-			background-color: $dark;
+
+		&::before {
+			background-color: red;
 		}
 	}
 }

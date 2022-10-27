@@ -33,12 +33,12 @@
   position: relative;
   transition: background-color 0.3s;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
 }
 .btn-special-animation::before {
   display: block;
   content: "";
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -49,7 +49,7 @@
 }
 .btn-special-animationhover::before {
   transform: scaleX(1);
-  transform-origin: left;
+  transform-origin: right;
 }
 
 .header {
@@ -79,16 +79,17 @@
 .header__btn {
   margin-top: 2em;
   padding: 0.8em 1.6em;
+  font-size: 1.4rem;
+  background-color: #f1f2c4;
   border: none;
-  background-color: #fff;
   border-radius: 8px;
   color: #3E5954;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
 }
-.header__btn__before {
-  background-color: #3E5954;
+.header__btn::before {
+  background-color: red;
 }
 
 html {
