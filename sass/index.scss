@@ -31,8 +31,9 @@ body {
 		border-radius: 8px;
 	}
 
-	&:hover{
-		.burger-btn__bars::after, .burger-btn__bars::before{
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
 			width: 100%;
 		}
 	}
@@ -48,17 +49,50 @@ body {
 		@include burgerBtn;
 	}
 
-	&__bars{
+	&__bars {
 		width: 100%;
-		&::after{
+		&::after {
 			top: 13px;
 			width: 60%;
 		}
 	}
 
-	&__bars::before{
+	&__bars::before {
 		top: 27px;
 		width: 30%;
-		transition-delay: .3s;
+		transition-delay: 0.3s;
+	}
+}
+
+// media queries
+
+@media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
+
+	.header {
+		&__title {
+			font-size: 6.6rem;
+		}
+		&__text {
+			font-size: 2.2rem;
+		}
+		&__btn {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.burger-btn {
+		top: 50px;
+		right: 50px;
+	}
+	.header{
+		&__title{
+			font-size: 10rem;
+		}
 	}
 }
