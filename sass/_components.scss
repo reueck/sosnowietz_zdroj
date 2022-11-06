@@ -19,7 +19,7 @@
 	&-left {
 		top: 0;
 		left: -50px;
-		transform: skew(45deg);
+		transform: skew(135deg);
 	}
 }
 
@@ -48,44 +48,35 @@
 	}
 }
 
-// header
-
-.header {
+.section-heading{
 	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	padding: 2em;
-	height: 75vh;
+	margin-bottom: 2em;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
 	text-align: center;
 	color: $dark;
-	@include heroImages('../img/hero.jpg');
-	background-attachment: scroll;
+	letter-spacing: 3px;
+}
 
-	&__title {
-		font-family: Fruktur;
-		font-size: 4.2rem;
-		font-weight: 300;
+.section-padding{
+	padding: 6em 2em;
+}
+
+// media querries
+@media(min-width: 768px){
+	.section-heading{
+		font-size: 3.7rem;
 	}
-
-	&__text {
-		font-size: 1.4rem;
+	.section-padding{
+		padding: 8em 2em;
 	}
-	&__btn {
-		margin-top: 2em;
-		padding: 0.8em 1.6em;
-        font-size: 1.4rem;
-        background-color: $light;
-		border: none;
-		border-radius: 8px;
-		color: $dark;
-		text-decoration: none;
-		text-transform: uppercase;
-		cursor: pointer;
-
-		&::before {
-			background-color: red;
-		}
+}
+@media(min-width: 992px){
+	.section-heading{
+		font-size: 4.8rem;
+	}
+	.section-padding{
+		padding: 10em 2em;
 	}
 }
