@@ -13,3 +13,9 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+@mixin districtCardStyles {
+	position: absolute;
+				left: 50%;
+				translate: -50%;
+}

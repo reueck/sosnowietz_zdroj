@@ -262,6 +262,103 @@ body {
   padding: 1em 0;
 }
 
+.districts__card {
+  position: relative;
+  margin: 1em 0;
+  height: 450px;
+  color: #3E5954;
+  text-align: center;
+  perspective: 1000px;
+}
+.districts__card:hover .districts__card-img {
+  transform: rotateY(-180deg);
+  opacity: 0;
+}
+.districts__card:hover .districts__card-info {
+  transform: rotateY(0);
+  opacity: 1;
+}
+.districts__card-img {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-size: cover;
+  transition: transform 1s, opacity 1s;
+}
+.districts__card-img--first {
+  background-image: linear-gradient(to right, rgba(228, 175, 203, 0.666) 0%, rgba(184, 203, 184, 0.652) 0%, rgba(184, 203, 184, 0.659) 0%, rgba(226, 197, 139, 0.731) 30%, rgba(194, 206, 156, 0.664) 64%, rgba(126, 218, 220, 0.715) 100%), url("../img/sosnowiec-walcownia.jpg");
+}
+.districts__card-img--second {
+  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.924) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-pogon.jpg");
+}
+.districts__card-img--third {
+  background-image: linear-gradient(to right, rgba(228, 175, 203, 0.666) 0%, rgba(184, 203, 184, 0.652) 0%, rgba(184, 203, 184, 0.659) 0%, rgba(226, 197, 139, 0.731) 30%, rgba(194, 206, 156, 0.664) 64%, rgba(126, 218, 220, 0.715) 100%), url("../img/sosnowiec-milowice.jpg");
+}
+.districts__card-img-title {
+  font-family: Fruktur;
+  font-size: 2.8rem;
+}
+.districts__card-img-info {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.8rem;
+}
+.districts__card-img-info i {
+  margin-right: 0.3em;
+}
+.districts__card-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgb(228, 175, 203) 0%, rgb(184, 203, 184) 0%, rgb(184, 203, 184) 0%, rgb(226, 197, 139) 30%, rgb(194, 206, 156) 64%, rgb(126, 218, 220) 100%);
+  border-radius: 8px;
+  opacity: 0;
+  transform: rotateY(180deg);
+  transition: transform 1s, opacity 1s;
+}
+.districts__card-info-title {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 1.2em;
+  font-family: Fruktur;
+  font-size: 2.8rem;
+}
+.districts__card-info-list {
+  margin: 0 auto;
+  width: 70%;
+  list-style: none;
+}
+.districts__card-info-list-item {
+  padding: 1em;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #1E261C;
+}
+.districts__card-info-list-item:last-child {
+  border-bottom: none;
+}
+.districts__card-info-btn {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  bottom: 2em;
+  padding: 1em;
+  border-radius: 8px;
+  width: 80%;
+  border: none;
+  background-color: #f2e291;
+  cursor: pointer;
+}
+.districts__card-info-btn::before {
+  background-color: #F2F0C9;
+}
+
 @-webkit-keyframes navItemsAni {
   from {
     translate: 150% 0;
@@ -334,6 +431,15 @@ body {
   .hero-img__text {
     font-size: 2.2rem;
   }
+  .districts__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .districts__card {
+    margin: 1em;
+    width: 45%;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -370,5 +476,10 @@ body {
   .hero-img hr {
     width: 60%;
     max-width: 900px;
+  }
+}
+@media (min-width: 1100px) {
+  .districts__card {
+    width: 30%;
   }
 }/*# sourceMappingURL=index.css.map */
