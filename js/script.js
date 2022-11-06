@@ -9,6 +9,17 @@ const navHandler = () => {
 			nav.classList.remove('nav__bar__items--active')
 		})
 	})
+	handleNavItemsAnimation();
+}
+
+const handleNavItemsAnimation = () => {
+	let delayTime = 0;
+
+	allNavItems.forEach(item => {
+		item.classList.toggle('nav-items-animation')
+		item.style.animationDelay = '.' + delayTime + 's';
+		delayTime++
+	})
 }
 
 navBurger.addEventListener('click', navHandler)

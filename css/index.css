@@ -155,7 +155,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   height: 100vh;
   width: 100%;
   background: linear-gradient(60deg, rgb(171, 236, 214) 0%, rgb(251, 237, 150) 100%);
@@ -168,7 +168,7 @@ body {
 .nav__bar__item {
   position: relative;
   display: block;
-  margin: 0.5em 0;
+  margin: 0.5em 45%;
   padding: 0.5em 2em;
   font-size: 2.8rem;
   color: #3E5954;
@@ -212,4 +212,24 @@ body {
   .header__title {
     font-size: 10rem;
   }
+}
+@-webkit-keyframes navItemsAni {
+  from {
+    translate: 150% 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+@keyframes navItemsAni {
+  from {
+    translate: 150% 0;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+.nav-items-animation {
+  -webkit-animation: navItemsAni 1s both;
+          animation: navItemsAni 1s both;
 }/*# sourceMappingURL=index.css.map */
