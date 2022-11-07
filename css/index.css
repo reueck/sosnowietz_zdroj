@@ -110,6 +110,8 @@ body {
 }
 .burger-btn:focus {
   outline: none;
+  height: 4.5em;
+  width: 5em;
   border: 1px solid #3E5954;
   border-radius: 8px;
 }

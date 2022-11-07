@@ -27,6 +27,8 @@ body {
 
 	&:focus {
 		outline: none;
+		height: 4.5em;
+		width: 5em;
 		border: 1px solid $dark;
 		border-radius: 8px;
 	}
