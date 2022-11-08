@@ -4,7 +4,6 @@
 @import './components';
 @import './animations';
 
-
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -473,29 +472,29 @@ body {
 			color: $light;
 			text-decoration: none;
 			transition: color 0.3s;
-			&:first-child{
+			&:first-child {
 				padding-left: 0;
 			}
 			&:hover {
 				color: $cta;
 			}
 		}
-		&-list{
+		&-list {
 			list-style: none;
-			&-item{
+			&-item {
 				margin-bottom: 1em;
-				a{
+				a {
 					color: $light;
 					text-decoration: none;
 				}
 			}
 		}
 	}
-	&__bottom-text{
+	&__bottom-text {
 		padding: 2em;
 		text-align: center;
 	}
-	hr{
+	hr {
 		color: $light;
 	}
 }

@@ -713,13 +713,6 @@ body {
   .footer__box-title {
     font-size: 2.4rem;
   }
-  .footer__box-list-item {
-    margin-bottom: 1em;
-  }
-  .footer__box-list-item a {
-    color: #f1f2c4;
-    text-decoration: none;
-  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -776,7 +769,7 @@ body {
     margin-top: 1em;
   }
   .reviews .swiper-slide-quote-text {
-    font-size: 2em;
+    font-size: 3em;
     padding: 0.2em 1em;
   }
   .reviews .swiper-slide-quote strong {

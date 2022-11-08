@@ -8,21 +8,21 @@
 }
 
 @mixin heroImages($bgImg) {
-    background-image: $over-sun-gradient, url($bgImg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+	background-image: $over-sun-gradient, url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 }
 
 @mixin districtCardStyles {
 	position: absolute;
-				left: 50%;
-				translate: -50%;
+	left: 50%;
+	translate: -50%;
 }
 
-@mixin contactForm{
+@mixin contactForm {
 	margin-bottom: 2em;
-	padding: .6em 1.2em;
+	padding: 0.6em 1.2em;
 	border: none;
 	border-radius: 8px;
 	font-size: 1.6rem;
