@@ -303,32 +303,32 @@ body {
 		box-shadow: 5px 5px 10px #2e2e2e2e;
 		background-color: $lighter;
 		overflow: hidden;
-		&-img{
+		&-img {
 			width: 100%;
-			transition: transform .3s;
+			transition: transform 0.3s;
 
-			&:hover{
+			&:hover {
 				transform: scale(1.1);
 			}
 		}
-		&-info{
+		&-info {
 			padding: 2em;
 			background-color: $light;
 			z-index: 10;
 		}
-		&-heading{
+		&-heading {
 			margin-bottom: 0.5em;
 			font-size: 2.4rem;
 			font-weight: 300;
 		}
-		&-text{
-			margin-bottom: .5em;
+		&-text {
+			margin-bottom: 0.5em;
 			font-size: 1.3em;
 			color: $darker;
 		}
-		&-btn{
+		&-btn {
 			margin-top: 1em;
-			padding: .8em;
+			padding: 0.8em;
 			width: 100%;
 			color: $cta;
 			background-color: $dark;
@@ -336,8 +336,57 @@ body {
 			border-radius: 8px;
 			cursor: pointer;
 
-			&::before{
+			&::before {
 				background-color: $darker;
+			}
+		}
+	}
+}
+// reviews section
+.reviews {
+	.swiper {
+		&-slide {
+			position: relative;
+			height: 70vh;
+			margin: 0 1em;
+			padding: 1em;
+			border-radius: 8px;
+			box-shadow: 5px 5px 10px #2e2e2e2e;
+			background-color: $darker;
+			&-img {
+				img {
+					width: 90px;
+					height: 90px;
+					object-fit: cover;
+					border-radius: 40%;
+				}
+			}
+			&-quote {
+				color: $cta;
+				&--upper {
+					text-align: right;
+					margin-bottom: 0.5em;
+					.fa-quote-right {
+						color: $cta;
+					}
+				}
+				&--lower {
+					margin-top: 0.5em;
+					.fa-quote-left {
+						color: $cta;
+					}
+				}
+			}
+			&-text {
+				font-size: 1.5rem;
+				color: $lighter;
+				padding: 0.2em 1em;
+			}
+			strong {
+				color: $dark;
+				font-size: 1em;
+				text-transform: uppercase;
+				font-weight: 300;
 			}
 		}
 	}
@@ -359,6 +408,41 @@ body {
 }
 
 // media queries
+@media (min-height: 667px) and (max-width: 375px) {
+	.reviews {
+		.swiper-slide {
+			&-img {
+				img {
+					height: 100px;
+					width: 100px;
+				}
+			}
+			&-text {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+@media (min-height: 812px) and (max-width: 375px) {
+	.reviews {
+		.swiper-slide {
+			&-img {
+				img {
+					margin: 1.5rem 0;
+					height: 120px;
+					width: 120px;
+				}
+			}
+			&-text {
+				font-size: 2rem;
+			}
+			strong {
+				margin: 2rem 0;
+				font-size: 2rem;
+			}
+		}
+	}
+}
 @media (min-width: 576px) {
 	.spa {
 		&__box {
@@ -383,29 +467,41 @@ body {
 			max-height: 300px;
 		}
 	}
-	.offers{
-		&__offer{
+	.offers {
+		&__offer {
 			display: flex;
 			margin: 2em 0;
 			width: 100%;
-			&-img{
-			width: 50%;
-			height: auto;
-			--right{
-				order: 1;
+			&-img {
+				width: 50%;
+				height: auto;
+				--right {
+					order: 1;
+				}
 			}
-			}
-			&-info{
+			&-info {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 			}
-			&-heading{
-				margin-bottom: .5em;
+			&-heading {
+				margin-bottom: 0.5em;
 				font-size: 3.6rem;
 			}
-			&-btn{
+			&-btn {
 				padding: 1em;
+			}
+		}
+	}
+	.reviews {
+		.swiper {
+			&-slide {
+				&-text {
+					font-size: 2rem;
+				}
+				strong {
+					font-size: 2rem;
+				}
 			}
 		}
 	}
@@ -453,13 +549,6 @@ body {
 			width: 45%;
 		}
 	}
-	// .offers{
-	// 	&__offer{
-	// 		 &-img{
-	// 			object-fit: cover;
-	// 			height: 300px;
-	// 		 }
-	// }
 }
 
 @media (min-width: 992px) {
@@ -504,12 +593,42 @@ body {
 			max-width: 900px;
 		}
 	}
-	.offers{
+	.offers {
 		// bgi jak znajdziesz 2 rozmiary
-		&__offer{
-				&-text{
-					font-size: 1.5rem;
+		&__offer {
+			&-text {
+				font-size: 1.5rem;
+			}
+		}
+	}
+	.reviews {
+		.swiper {
+			&-slide {
+				height: 50vh;
+				max-width: 70vw;
+				padding: 1em;
+				&-img {
+					img {
+						width: 120px;
+						height: 120px;
+					}
 				}
+				&-quote {
+					&--upper {
+						margin-bottom: 1em;
+						&--lower {
+							margin-top: 1em;
+						}
+					}
+					&-text {
+						font-size: 2em;
+						padding: 0.2em 1em;
+					}
+					strong {
+						font-size: 1em;
+					}
+				}
+			}
 		}
 	}
 }
