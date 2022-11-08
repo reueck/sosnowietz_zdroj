@@ -393,14 +393,59 @@ body {
 	}
 }
 //contactUs section
-.contact{
+.contactus {
 	position: relative;
 	background-color: $darker;
 	overflow: hidden;
+	color: $light;
+	.section-heading {
+		color: $light;
+	}
+	.white-block-right {
+		background-color: $dark;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		&-top {
+			display: flex;
+			flex-direction: column;
+		}
+		&-label {
+			margin-bottom: 0.5em;
+			text-transform: uppercase;
+		}
+		&-input {
+			@include contactForm;
+		}
+		&-textarea {
+			@include contactForm;
+			max-width: 100%;
+			min-width: 100%;
+			width: 100%;
+			min-height: 150px;
+		}
+		&-btn{
+			align-self: flex-end;
+			padding: 1em;
+			width: 100%;
+			max-width: 300px;
+			color: $dark;
+			border: none;
+			border-radius: 8px;
+			background-color: $cta;
+			font-size: 1em;
+			text-transform: uppercase;
+			cursor:pointer;
 
+			&::before{
+				background-color: $lighter;
+			}
+		}
+	}
 }
 //====================
 // animations
 
 // media queries
-@import './mediaquerries'
+@import './mediaquerries';
