@@ -135,6 +135,34 @@
 			width: 45%;
 		}
 	}
+	.footer{
+		&__boxes{
+			display: flex;
+			justify-content: space-between;
+		}
+		&__box-desktop{
+			display: block;
+		}
+		&__box{
+			margin: 0 2em;
+			width: 25%;
+			&:first-child{
+				width: 50%;
+			}
+			&-title{
+				font-size: 2.4rem;
+			}
+			&-list{
+				&-item{
+					margin-bottom: 1em;
+					a{
+						color: $light;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {

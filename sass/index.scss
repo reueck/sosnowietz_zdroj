@@ -4,6 +4,7 @@
 @import './components';
 @import './animations';
 
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -425,7 +426,7 @@ body {
 			width: 100%;
 			min-height: 150px;
 		}
-		&-btn{
+		&-btn {
 			align-self: flex-end;
 			padding: 1em;
 			width: 100%;
@@ -436,16 +437,69 @@ body {
 			background-color: $cta;
 			font-size: 1em;
 			text-transform: uppercase;
-			cursor:pointer;
+			cursor: pointer;
 
-			&::before{
+			&::before {
 				background-color: $lighter;
 			}
 		}
 	}
 }
 //====================
-// animations
+//footer
+.footer {
+	color: $lighter;
+	background-color: $dark;
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+	&__box {
+		font-size: 1.4rem;
 
+		&-desktop {
+			display: none;
+		}
+		&-title {
+			margin-bottom: 1em;
+			font-size: 3rem;
+			text-transform: uppercase;
+		}
+		&-social {
+			margin: 2em 0 1em;
+		}
+		&-link {
+			padding: 0 0.3em;
+			font-size: 3.6rem;
+			color: $light;
+			text-decoration: none;
+			transition: color 0.3s;
+			&:first-child{
+				padding-left: 0;
+			}
+			&:hover {
+				color: $cta;
+			}
+		}
+		&-list{
+			list-style: none;
+			&-item{
+				margin-bottom: 1em;
+				a{
+					color: $light;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	&__bottom-text{
+		padding: 2em;
+		text-align: center;
+	}
+	hr{
+		color: $light;
+	}
+}
+
+//====================
 // media queries
 @import './mediaquerries';

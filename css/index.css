@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -538,6 +536,58 @@ body {
   background-color: #F2F0C9;
 }
 
+.footer {
+  color: #F2F0C9;
+  background-color: #3E5954;
+}
+.footer .wrapper {
+  padding: 6em 2em 2em;
+}
+.footer__box {
+  font-size: 1.4rem;
+}
+.footer__box-desktop {
+  display: none;
+}
+.footer__box-title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.footer__box-social {
+  margin: 2em 0 1em;
+}
+.footer__box-link {
+  padding: 0 0.3em;
+  font-size: 3.6rem;
+  color: #f1f2c4;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer__box-link:first-child {
+  padding-left: 0;
+}
+.footer__box-link:hover {
+  color: #f2e291;
+}
+.footer__box-list {
+  list-style: none;
+}
+.footer__box-list-item {
+  margin-bottom: 1em;
+}
+.footer__box-list-item a {
+  color: #f1f2c4;
+  text-decoration: none;
+}
+.footer__bottom-text {
+  padding: 2em;
+  text-align: center;
+}
+.footer hr {
+  color: #f1f2c4;
+}
+
 @media (min-height: 667px) and (max-width: 375px) {
   .reviews .swiper-slide-img img {
     height: 100px;
@@ -645,6 +695,30 @@ body {
   .districts__card {
     margin: 1em;
     width: 45%;
+  }
+  .footer__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__box-desktop {
+    display: block;
+  }
+  .footer__box {
+    margin: 0 2em;
+    width: 25%;
+  }
+  .footer__box:first-child {
+    width: 50%;
+  }
+  .footer__box-title {
+    font-size: 2.4rem;
+  }
+  .footer__box-list-item {
+    margin-bottom: 1em;
+  }
+  .footer__box-list-item a {
+    color: #f1f2c4;
+    text-decoration: none;
   }
 }
 @media (min-width: 992px) {
