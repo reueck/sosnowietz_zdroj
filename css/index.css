@@ -71,6 +71,17 @@ body {
   padding: 6em 2em;
 }
 
+.swiper {
+  width: 75%;
+  height: 70vh;
+}
+.swiper-slide {
+  border-radius: 18px;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  background-color: #1E261C;
+}
 @media (min-width: 768px) {
   .section-heading {
     font-size: 3.7rem;
