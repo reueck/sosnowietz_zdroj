@@ -63,11 +63,13 @@
 	padding: 6em 2em;
 }
 
-
-
-
 // media querries
 @media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
+
 	.section-heading {
 		font-size: 3.7rem;
 	}

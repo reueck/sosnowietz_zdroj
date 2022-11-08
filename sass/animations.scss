@@ -1,0 +1,13 @@
+
+@keyframes navItemsAni {
+	from {
+		translate: 150% 0;
+	}
+	to {
+		translate: 0 0;
+	}
+}
+
+.nav-items-animation {
+	animation: navItemsAni 1s both;
+}
