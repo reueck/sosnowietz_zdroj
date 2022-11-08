@@ -152,15 +152,6 @@
 			&-title{
 				font-size: 2.4rem;
 			}
-			&-list{
-				&-item{
-					margin-bottom: 1em;
-					a{
-						color: $light;
-						text-decoration: none;
-					}
-				}
-			}
 		}
 	}
 }
@@ -235,7 +226,7 @@
 						}
 					}
 					&-text {
-						font-size: 2em;
+						font-size: 3em;
 						padding: 0.2em 1em;
 					}
 					strong {
