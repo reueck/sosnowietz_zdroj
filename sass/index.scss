@@ -7,7 +7,6 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	
 }
 
 body {
@@ -52,7 +51,6 @@ body {
 	&__bars::after,
 	&__bars::before {
 		@include burgerBtn;
-		
 	}
 
 	&__bars {
@@ -60,7 +58,6 @@ body {
 		&::after {
 			top: 13px;
 			width: 60%;
-
 		}
 	}
 
@@ -311,7 +308,7 @@ body {
 		&-img {
 			width: 100%;
 			transition: transform 0.3s;
-
+			object-fit: cover;
 			&:hover {
 				transform: scale(1.1);
 			}
@@ -349,7 +346,7 @@ body {
 }
 // reviews section
 .reviews {
-overflow-x: hidden;
+	overflow-x: hidden;
 	.swiper {
 		&-slide {
 			position: relative;

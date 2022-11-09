@@ -386,6 +386,8 @@ body {
 .offers__offer-img {
   width: 100%;
   transition: transform 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .offers__offer-img:hover {
   transform: scale(1.1);
@@ -684,6 +686,12 @@ body {
   .districts__card {
     margin: 1em;
     width: 45%;
+  }
+  .offers__offer-img {
+    width: 20em;
+  }
+  .offers__offer-info-heading {
+    font-size: 1em;
   }
   .footer__boxes {
     display: flex;

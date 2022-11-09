@@ -16,7 +16,6 @@
 @media (min-height: 812px) and (max-width: 375px) {
 	.reviews {
 		.swiper-slide {
-			
 			&-img {
 				img {
 					margin: 1.5rem 0;
@@ -135,6 +134,19 @@
 			width: 45%;
 		}
 	}
+	.offers {
+		&__offer {
+			&-img {
+				width: 20em;
+				
+			}
+			&-info {
+				&-heading {
+					font-size: 1em;
+				}
+			}
+		}
+	}
 	.footer {
 		&__boxes {
 			display: flex;
@@ -159,7 +171,7 @@
 		height: 50px;
 		width: 45%;
 		display: block;
-		&-right{
+		&-right {
 			display: none;
 		}
 	}
