@@ -92,7 +92,7 @@ body {
 		}
 
 		&__item {
-			position: relative;
+			// position: static;
 			display: block;
 			margin: 0.5em 45%;
 			padding: 0.5em 2em;
@@ -349,7 +349,7 @@ body {
 }
 // reviews section
 .reviews {
-	// overflow: hidden;
+overflow-x: hidden;
 	.swiper {
 		&-slide {
 			position: relative;

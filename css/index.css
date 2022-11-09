@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  overflow-y: hidden;
 }
 
 .white-block {
@@ -71,27 +72,6 @@ body {
   padding: 6em 2em;
 }
 
-@media (min-width: 768px) {
-  .white-block {
-    height: 50px;
-    width: 45%;
-    display: block;
-  }
-  .section-heading {
-    font-size: 3.7rem;
-  }
-  .section-padding {
-    padding: 8em 2em;
-  }
-}
-@media (min-width: 992px) {
-  .section-heading {
-    font-size: 4.8rem;
-  }
-  .section-padding {
-    padding: 10em 2em;
-  }
-}
 @-webkit-keyframes navItemsAni {
   from {
     translate: 150% 0;
@@ -100,6 +80,7 @@ body {
     translate: 0 0;
   }
 }
+
 @keyframes navItemsAni {
   from {
     translate: 150% 0;
@@ -192,7 +173,6 @@ body {
   transform: translateX(0);
 }
 .nav__bar__item {
-  position: relative;
   display: block;
   margin: 0.5em 45%;
   padding: 0.5em 2em;
@@ -439,6 +419,9 @@ body {
   background-color: #1E261C;
 }
 
+.reviews {
+  overflow-x: hidden;
+}
 .reviews .swiper-slide {
   position: relative;
   height: 70vh;
@@ -719,6 +702,20 @@ body {
   .footer__box-title {
     font-size: 2.4rem;
   }
+  .white-block {
+    height: 50px;
+    width: 45%;
+    display: block;
+  }
+  .white-block-right {
+    display: none;
+  }
+  .section-heading {
+    font-size: 3.7rem;
+  }
+  .section-padding {
+    padding: 8em 2em;
+  }
 }
 @media (min-width: 992px) {
   .burger-btn {
@@ -780,6 +777,12 @@ body {
   }
   .reviews .swiper-slide-quote strong {
     font-size: 1em;
+  }
+  .section-heading {
+    font-size: 4.8rem;
+  }
+  .section-padding {
+    padding: 10em 2em;
   }
 }
 @media (min-width: 1100px) {
