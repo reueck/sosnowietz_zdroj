@@ -5,6 +5,8 @@
 	content: '';
 	background-color: $dark;
 	transition: width 0.3s;
+	box-shadow: 7px 11px 16px -2.5px rgba(66, 68, 90, 0.25);
+
 }
 
 @mixin heroImages($bgImg) {

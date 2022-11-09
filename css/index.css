@@ -12,7 +12,6 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  overflow: hidden;
 }
 
 .white-block {
@@ -123,6 +122,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   background-color: #F2F0C9;
+  overflow-x: hidden;
 }
 
 .burger-btn {
@@ -159,6 +159,7 @@ body {
   content: "";
   background-color: #3E5954;
   transition: width 0.3s;
+  box-shadow: 7px 11px 16px -2.5px rgba(66, 68, 90, 0.25);
 }
 .burger-btn__bars {
   width: 100%;
@@ -438,9 +439,6 @@ body {
   background-color: #1E261C;
 }
 
-.reviews {
-  overflow: hidden;
-}
 .reviews .swiper-slide {
   position: relative;
   height: 70vh;
