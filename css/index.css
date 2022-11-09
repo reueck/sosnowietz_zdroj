@@ -303,7 +303,7 @@ body {
   background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.924) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-pogon.jpg");
 }
 .districts__card-img--third {
-  background-image: linear-gradient(to right, rgba(228, 175, 203, 0.666) 0%, rgba(184, 203, 184, 0.652) 0%, rgba(184, 203, 184, 0.659) 0%, rgba(226, 197, 139, 0.731) 30%, rgba(194, 206, 156, 0.664) 64%, rgba(126, 218, 220, 0.715) 100%), url("../img/sosnowiec-milowice.jpg");
+  background-image: linear-gradient(to right, rgba(228, 175, 203, 0.666) 0%, rgba(184, 203, 184, 0.652) 0%, rgba(184, 203, 184, 0.659) 0%, rgba(226, 197, 139, 0.731) 30%, rgba(194, 206, 156, 0.664) 64%, rgba(126, 218, 220, 0.715) 100%), url("../img/sosnowiec-klimontow.jpg");
 }
 .districts__card-img-title {
   font-family: Fruktur;
@@ -579,6 +579,11 @@ body {
   color: #f1f2c4;
 }
 
+@media (min-height: 540px) and (max-width: 375px) {
+  .reviews .swiper-slide {
+    height: 24em;
+  }
+}
 @media (min-height: 667px) and (max-width: 375px) {
   .reviews .swiper-slide-img img {
     height: 100px;
@@ -648,6 +653,9 @@ body {
   .offers__offer-btn {
     padding: 1em;
   }
+  .reviews .swiper {
+    padding: 0 10%;
+  }
   .reviews .swiper-slide-text {
     font-size: 2rem;
   }
@@ -692,6 +700,12 @@ body {
   }
   .offers__offer-info-heading {
     font-size: 1em;
+  }
+  .reviews .swiper {
+    padding: 0 25%;
+  }
+  .reviews .swiper .swiper-slide {
+    height: 24em;
   }
   .footer__boxes {
     display: flex;
@@ -764,8 +778,11 @@ body {
   .offers__offer-text {
     font-size: 1.5rem;
   }
+  .reviews .swiper {
+    padding: 0 30%;
+  }
   .reviews .swiper-slide {
-    height: 50vh;
+    height: 30vh;
     max-width: 70vw;
     padding: 1em;
   }

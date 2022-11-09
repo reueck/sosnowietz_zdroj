@@ -1,3 +1,12 @@
+@media(min-height: 540px) and (max-width: 375px) {
+	.reviews{
+		.swiper-slide{
+			
+				height: 24em;
+		}
+	}
+}
+
 @media (min-height: 667px) and (max-width: 375px) {
 	.reviews {
 		.swiper-slide {
@@ -16,6 +25,7 @@
 @media (min-height: 812px) and (max-width: 375px) {
 	.reviews {
 		.swiper-slide {
+			
 			&-img {
 				img {
 					margin: 1.5rem 0;
@@ -85,6 +95,7 @@
 	}
 	.reviews {
 		.swiper {
+			padding: 0 10%;
 			&-slide {
 				&-text {
 					font-size: 2rem;
@@ -147,6 +158,14 @@
 			}
 		}
 	}
+	.reviews {
+		.swiper {
+			.swiper-slide{
+			
+				height: 24em;
+		}
+			padding: 0 25%;}
+		}
 	.footer {
 		&__boxes {
 			display: flex;
@@ -236,8 +255,9 @@
 	}
 	.reviews {
 		.swiper {
+			padding: 0 30%;
 			&-slide {
-				height: 50vh;
+				height: 30vh;
 				max-width: 70vw;
 				padding: 1em;
 				&-img {
