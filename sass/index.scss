@@ -345,6 +345,7 @@ body {
 }
 // reviews section
 .reviews {
+	overflow: hidden;
 	.swiper {
 		&-slide {
 			position: relative;

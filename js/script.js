@@ -2,6 +2,8 @@ const nav = document.querySelector('.nav__bar__items')
 const navBurger = document.querySelector('.burger-btn')
 const allNavItems = document.querySelectorAll('.nav__bar__item')
 const footerYear = document.querySelector('.footer__year')
+
+
 const navHandler = () => {
 	nav.classList.toggle('nav__bar__items--active')
 

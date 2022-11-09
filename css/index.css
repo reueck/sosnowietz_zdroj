@@ -433,6 +433,9 @@ body {
   background-color: #1E261C;
 }
 
+.reviews {
+  overflow: hidden;
+}
 .reviews .swiper-slide {
   position: relative;
   height: 70vh;
