@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  overflow: hidden;
 }
 
 .white-block {
@@ -19,11 +20,13 @@ body {
   height: 40px;
   width: 60%;
   background-color: #F2F0C9;
+  display: none;
 }
 .white-block-right {
   bottom: 0;
   right: -50px;
   transform: skew(135deg);
+  overflow: hidden;
 }
 .white-block-left {
   top: 0;
@@ -73,6 +76,7 @@ body {
   .white-block {
     height: 50px;
     width: 45%;
+    display: block;
   }
   .section-heading {
     font-size: 3.7rem;
@@ -122,6 +126,7 @@ body {
 }
 
 .burger-btn {
+  overflow: hidden;
   position: fixed;
   top: 20px;
   right: 20px;
