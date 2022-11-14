@@ -169,7 +169,7 @@ body {
 		width: 100%;
 		margin-bottom: 1em;
 
-		filter: saturate(300%) brightness(80%) hue-rotate(30deg) blur(1px);
+		filter: saturate(300%) brightness(80%) hue-rotate(30deg) blur(.5px);
 	}
 
 	&__title {
@@ -225,17 +225,18 @@ body {
 			background-size: cover;
 			transition: transform 1s, opacity 1s;
 			&--first {
-				background-image: $old-hat-gradient, url('../img/sosnowiec-walcownia.jpg');
+				background-image: $over-sun-gradient, url('../img/sosnowiec-walcownia.jpg');
 			}
 			&--second {
 				background-image: $over-sun-gradient, url('../img/sosnowiec-pogon.jpg');
 			}
 			&--third {
-				background-image: $old-hat-gradient, url('../img/sosnowiec-milowice.JPG');
+				background-image: $over-sun-gradient, url('../img/sosnowiec-milowice.JPG');
 			}
 			&-title {
 				font-family: Fruktur;
 				font-size: 2.8rem;
+				text-transform: uppercase;
 			}
 			&-info {
 				position: absolute;
@@ -320,12 +321,12 @@ body {
 		}
 		&-heading {
 			margin-bottom: 0.5em;
-			font-size: 2.4rem;
+			font-size: 2.5rem;
 			font-weight: 300;
 		}
 		&-text {
 			margin-bottom: 0.5em;
-			font-size: 1.3em;
+			font-size: 1em;
 			color: $darker;
 		}
 		&-btn {

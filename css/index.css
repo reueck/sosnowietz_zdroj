@@ -205,7 +205,7 @@ body {
   height: 75vh;
   text-align: center;
   color: #3E5954;
-  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.924) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/hero.jpg");
+  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.724) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -243,7 +243,7 @@ body {
 .spa__img {
   width: 100%;
   margin-bottom: 1em;
-  filter: saturate(300%) brightness(80%) hue-rotate(30deg) blur(1px);
+  filter: saturate(300%) brightness(80%) hue-rotate(30deg) blur(0.5px);
 }
 .spa__title {
   color: #1E261C;
@@ -257,7 +257,7 @@ body {
 .hero-img {
   position: relative;
   padding: 10em 2em;
-  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.924) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-apple.jpg");
+  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.724) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-apple.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -297,17 +297,18 @@ body {
   transition: transform 1s, opacity 1s;
 }
 .districts__card-img--first {
-  background-image: linear-gradient(to right, rgba(228, 175, 203, 0.666) 0%, rgba(184, 203, 184, 0.652) 0%, rgba(184, 203, 184, 0.659) 0%, rgba(226, 197, 139, 0.731) 30%, rgba(194, 206, 156, 0.664) 64%, rgba(126, 218, 220, 0.715) 100%), url("../img/sosnowiec-walcownia.jpg");
+  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.724) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-walcownia.jpg");
 }
 .districts__card-img--second {
-  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.924) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-pogon.jpg");
+  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.724) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-pogon.jpg");
 }
 .districts__card-img--third {
-  background-image: linear-gradient(to right, rgba(228, 175, 203, 0.666) 0%, rgba(184, 203, 184, 0.652) 0%, rgba(184, 203, 184, 0.659) 0%, rgba(226, 197, 139, 0.731) 30%, rgba(194, 206, 156, 0.664) 64%, rgba(126, 218, 220, 0.715) 100%), url("../img/sosnowiec-milowice.JPG");
+  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.724) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-milowice.JPG");
 }
 .districts__card-img-title {
   font-family: Fruktur;
   font-size: 2.8rem;
+  text-transform: uppercase;
 }
 .districts__card-img-info {
   position: absolute;
@@ -372,7 +373,7 @@ body {
 
 .offers {
   position: relative;
-  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.924) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-centrum.jpg");
+  background-image: linear-gradient(60deg, rgba(171, 236, 214, 0.724) 0%, rgba(251, 237, 150, 0.458) 100%), url("../img/sosnowiec-centrum.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -399,12 +400,12 @@ body {
 }
 .offers__offer-heading {
   margin-bottom: 0.5em;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 300;
 }
 .offers__offer-text {
   margin-bottom: 0.5em;
-  font-size: 1.3em;
+  font-size: 1em;
   color: #1E261C;
 }
 .offers__offer-btn {
